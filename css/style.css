@@ -7,3 +7,31 @@ svg {
   width: 24px;
   height: 24px;
 }
+
+.site-title{
+    text-align: center;
+    margin: 1rem auto;
+    width: 60vw;
+    color: rgb(255, 255, 255);
+    background-color: #1a1a1a;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.site-title p{
+    color: #b3b3b3;
+}
+@media screen and (max-width: 767px){
+  
+    .site-title{
+      padding: 0.5rem;
+      margin: 0.5rem auto;
+      width: 90vw;
+    }
+    .site-title h1{
+        font-size: 1.5rem;
+    }
+    .site-title p{
+        font-size: 0.8rem;
+    }
+}

@@ -45,7 +45,10 @@ async function getProducts() {
             productCard.appendChild(productCardInfo);
 
             productsContainer.appendChild(productCard);
-        });
+            productCard.addEventListener('click', () => {
+                    window.location.href = `product-details.html?id=${element.id}`;
+                });
+            });
 
     } catch (ex) {
         console.error('Error fetching products:', ex);
