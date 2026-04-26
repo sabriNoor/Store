@@ -40,6 +40,7 @@ async function getProductDetails(id) {
         productDetailsInfo.className="product-details__info";
 
         const productTitle=document.createElement('h2');
+        productTitle.className="product-details__title";
         productTitle.textContent=product.title;
         productDetailsInfo.appendChild(productTitle);
 
