@@ -4,6 +4,7 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 4rem;
+    margin-bottom: 4rem;
 }
 
 .product-details__main-image img{
@@ -40,7 +41,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
     max-width: 400px;
 }
 

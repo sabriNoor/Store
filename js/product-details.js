@@ -53,6 +53,7 @@ async function getProductDetails(id) {
         productDescription.textContent=product.description;
         productDetailsInfo.appendChild(productDescription);
 
+
          const productPrice=document.createElement('p');
         productPrice.className="product-details__price";
         productPrice.textContent=`$${product.price}`;
