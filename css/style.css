@@ -1,6 +1,9 @@
 body{
     margin: 0;
     font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 svg {
@@ -20,6 +23,14 @@ svg {
 
 .site-title p{
     color: #b3b3b3;
+}
+
+footer{
+    text-align: center;
+    padding: 1rem;
+    background-color: rgb(0, 0, 0);;
+    color: #b3b3b3;
+    margin-top: auto;
 }
 @media screen and (max-width: 767px){
   
