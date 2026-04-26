@@ -10,14 +10,18 @@ async function getProducts() {
             productCard.className = "product-card";
             productCard.id = element.id;
 
+            const productImgContainer = document.createElement('div');
+            productImgContainer.className = "product-card__img";
+
             const productImg = document.createElement('img');
             productImg.src = element.image;
-            productCard.appendChild(productImg);
+            productImgContainer.appendChild(productImg);
+            productCard.appendChild(productImgContainer);
 
             const productTitle = document.createElement('p');
             productTitle.className = "product-card__title";
-            if(element.title.length > 30){
-                productTitle.textContent = element.title.substring(0, 30) + '...';
+            if(element.title.length > 50){
+                productTitle.textContent = element.title.substring(0, 50) + '...';
             } else {
                 productTitle.textContent = element.title;
             }
