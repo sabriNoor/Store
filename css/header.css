@@ -1,0 +1,41 @@
+.site-header__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.site-header__logo a{
+    text-decoration: none;
+    color: rgba(255, 255, 255);
+    font-size: 2.5rem;
+    font-family: monospace;  
+}
+
+.site-header__search,.site-header__links{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.site-header__search input{
+    width: 25vw;
+    font-size: 1rem;
+    height: 1.5rem;
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+    border: none;
+}
+
+@media screen and (max-width: 767px){
+    .site-header__logo a{
+        font-size: 1.5rem;
+    }
+    .site-header__search input{
+        width: auto;
+        font-size: 1rem;
+        padding: 0;
+    }
+}
